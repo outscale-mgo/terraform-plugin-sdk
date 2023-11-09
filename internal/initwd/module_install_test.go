@@ -12,11 +12,11 @@ import (
 
 	"github.com/go-test/deep"
 	version "github.com/hashicorp/go-version"
-	"github.com/outscale-mgo/terraform-plugin-sdk/helper/logging"
-	"github.com/outscale-mgo/terraform-plugin-sdk/internal/configs"
-	"github.com/outscale-mgo/terraform-plugin-sdk/internal/configs/configload"
-	"github.com/outscale-mgo/terraform-plugin-sdk/internal/registry"
-	"github.com/outscale-mgo/terraform-plugin-sdk/internal/tfdiags"
+	"github.com/hashicorp/terraform-plugin-sdk/helper/logging"
+	"github.com/hashicorp/terraform-plugin-sdk/internal/configs"
+	"github.com/hashicorp/terraform-plugin-sdk/internal/configs/configload"
+	"github.com/hashicorp/terraform-plugin-sdk/internal/registry"
+	"github.com/hashicorp/terraform-plugin-sdk/internal/tfdiags"
 )
 
 func TestMain(m *testing.M) {

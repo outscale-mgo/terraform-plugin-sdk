@@ -4,14 +4,14 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/outscale-mgo/terraform-plugin-sdk/internal/plans"
-	"github.com/outscale-mgo/terraform-plugin-sdk/internal/providers"
+	"github.com/hashicorp/terraform-plugin-sdk/internal/plans"
+	"github.com/hashicorp/terraform-plugin-sdk/internal/providers"
 
-	"github.com/outscale-mgo/terraform-plugin-sdk/internal/states"
+	"github.com/hashicorp/terraform-plugin-sdk/internal/states"
 
-	"github.com/outscale-mgo/terraform-plugin-sdk/internal/addrs"
-	"github.com/outscale-mgo/terraform-plugin-sdk/internal/dag"
-	"github.com/outscale-mgo/terraform-plugin-sdk/internal/tfdiags"
+	"github.com/hashicorp/terraform-plugin-sdk/internal/addrs"
+	"github.com/hashicorp/terraform-plugin-sdk/internal/dag"
+	"github.com/hashicorp/terraform-plugin-sdk/internal/tfdiags"
 )
 
 // NodeRefreshableManagedResource represents a resource that is expanabled into

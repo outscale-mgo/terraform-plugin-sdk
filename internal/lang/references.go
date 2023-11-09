@@ -2,10 +2,10 @@ package lang
 
 import (
 	"github.com/hashicorp/hcl/v2"
-	"github.com/outscale-mgo/terraform-plugin-sdk/internal/addrs"
-	"github.com/outscale-mgo/terraform-plugin-sdk/internal/configs/configschema"
-	"github.com/outscale-mgo/terraform-plugin-sdk/internal/lang/blocktoattr"
-	"github.com/outscale-mgo/terraform-plugin-sdk/internal/tfdiags"
+	"github.com/hashicorp/terraform-plugin-sdk/internal/addrs"
+	"github.com/hashicorp/terraform-plugin-sdk/internal/configs/configschema"
+	"github.com/hashicorp/terraform-plugin-sdk/internal/lang/blocktoattr"
+	"github.com/hashicorp/terraform-plugin-sdk/internal/tfdiags"
 )
 
 // References finds all of the references in the given set of traversals,

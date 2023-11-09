@@ -8,7 +8,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/outscale-mgo/terraform-plugin-sdk/terraform"
+	"github.com/hashicorp/terraform-plugin-sdk/terraform"
 )
 
 func TestResourceDataGet(t *testing.T) {

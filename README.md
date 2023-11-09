@@ -51,12 +51,12 @@ Migrating to the standalone SDK v1 is covered on the [Plugin SDK section](https:
 
 ## Versioning
 
-The Terraform Plugin SDK is a [Go module](https://github.com/golang/go/wiki/Modules) versioned using [semantic versioning](https://semver.org/). See [SUPPORT.md](https://github.com/outscale-mgo/terraform-plugin-sdk/blob/v1-maint/SUPPORT.md) for information on our support policies.
+The Terraform Plugin SDK is a [Go module](https://github.com/golang/go/wiki/Modules) versioned using [semantic versioning](https://semver.org/). See [SUPPORT.md](https://github.com/hashicorp/terraform-plugin-sdk/blob/v1-maint/SUPPORT.md) for information on our support policies.
 
 ## Contributing
 
-See [`.github/CONTRIBUTING.md`](https://github.com/outscale-mgo/terraform-plugin-sdk/blob/master/.github/CONTRIBUTING.md)
+See [`.github/CONTRIBUTING.md`](https://github.com/hashicorp/terraform-plugin-sdk/blob/master/.github/CONTRIBUTING.md)
 
 ## License
 
-[Mozilla Public License v2.0](https://github.com/outscale-mgo/terraform-plugin-sdk/blob/master/LICENSE)
+[Mozilla Public License v2.0](https://github.com/hashicorp/terraform-plugin-sdk/blob/master/LICENSE)

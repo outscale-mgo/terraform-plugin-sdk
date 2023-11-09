@@ -11,11 +11,11 @@ import (
 	"github.com/zclconf/go-cty/cty"
 	ctyjson "github.com/zclconf/go-cty/cty/json"
 
-	"github.com/outscale-mgo/terraform-plugin-sdk/internal/addrs"
-	"github.com/outscale-mgo/terraform-plugin-sdk/internal/configs/configschema"
-	"github.com/outscale-mgo/terraform-plugin-sdk/internal/plans"
-	"github.com/outscale-mgo/terraform-plugin-sdk/internal/plans/objchange"
-	"github.com/outscale-mgo/terraform-plugin-sdk/internal/states"
+	"github.com/hashicorp/terraform-plugin-sdk/internal/addrs"
+	"github.com/hashicorp/terraform-plugin-sdk/internal/configs/configschema"
+	"github.com/hashicorp/terraform-plugin-sdk/internal/plans"
+	"github.com/hashicorp/terraform-plugin-sdk/internal/plans/objchange"
+	"github.com/hashicorp/terraform-plugin-sdk/internal/states"
 )
 
 // ResourceChange returns a string representation of a change to a particular

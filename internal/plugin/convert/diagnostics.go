@@ -1,8 +1,8 @@
 package convert
 
 import (
-	"github.com/outscale-mgo/terraform-plugin-sdk/internal/tfdiags"
-	proto "github.com/outscale-mgo/terraform-plugin-sdk/internal/tfplugin5"
+	"github.com/hashicorp/terraform-plugin-sdk/internal/tfdiags"
+	proto "github.com/hashicorp/terraform-plugin-sdk/internal/tfplugin5"
 	"github.com/zclconf/go-cty/cty"
 )
 

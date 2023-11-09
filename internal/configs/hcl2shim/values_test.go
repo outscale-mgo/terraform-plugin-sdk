@@ -5,7 +5,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/outscale-mgo/terraform-plugin-sdk/internal/configs/configschema"
+	"github.com/hashicorp/terraform-plugin-sdk/internal/configs/configschema"
 	"github.com/zclconf/go-cty/cty"
 )
 

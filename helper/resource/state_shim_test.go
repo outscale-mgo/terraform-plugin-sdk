@@ -3,10 +3,10 @@ package resource
 import (
 	"testing"
 
-	"github.com/outscale-mgo/terraform-plugin-sdk/helper/schema"
-	"github.com/outscale-mgo/terraform-plugin-sdk/internal/addrs"
-	"github.com/outscale-mgo/terraform-plugin-sdk/internal/states"
-	"github.com/outscale-mgo/terraform-plugin-sdk/terraform"
+	"github.com/hashicorp/terraform-plugin-sdk/helper/schema"
+	"github.com/hashicorp/terraform-plugin-sdk/internal/addrs"
+	"github.com/hashicorp/terraform-plugin-sdk/internal/states"
+	"github.com/hashicorp/terraform-plugin-sdk/terraform"
 	"github.com/zclconf/go-cty/cty"
 )
 

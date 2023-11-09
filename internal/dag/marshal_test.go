@@ -6,7 +6,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/outscale-mgo/terraform-plugin-sdk/internal/tfdiags"
+	"github.com/hashicorp/terraform-plugin-sdk/internal/tfdiags"
 )
 
 func TestGraphDot_empty(t *testing.T) {

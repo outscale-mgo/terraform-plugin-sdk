@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/outscale-mgo/terraform-plugin-sdk/internal/configs/configschema"
-	"github.com/outscale-mgo/terraform-plugin-sdk/internal/dag"
+	"github.com/hashicorp/terraform-plugin-sdk/internal/configs/configschema"
+	"github.com/hashicorp/terraform-plugin-sdk/internal/dag"
 )
 
 // GraphNodeAttachResourceSchema is an interface implemented by node types

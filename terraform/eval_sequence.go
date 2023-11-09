@@ -1,7 +1,7 @@
 package terraform
 
 import (
-	"github.com/outscale-mgo/terraform-plugin-sdk/internal/tfdiags"
+	"github.com/hashicorp/terraform-plugin-sdk/internal/tfdiags"
 )
 
 // EvalSequence is an EvalNode that evaluates in sequence.

@@ -6,9 +6,9 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/outscale-mgo/terraform-plugin-sdk/helper/hashcode"
-	"github.com/outscale-mgo/terraform-plugin-sdk/internal/configs/hcl2shim"
-	"github.com/outscale-mgo/terraform-plugin-sdk/terraform"
+	"github.com/hashicorp/terraform-plugin-sdk/helper/hashcode"
+	"github.com/hashicorp/terraform-plugin-sdk/internal/configs/hcl2shim"
+	"github.com/hashicorp/terraform-plugin-sdk/terraform"
 )
 
 func TestConfigFieldReader_impl(t *testing.T) {

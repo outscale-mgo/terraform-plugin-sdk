@@ -11,7 +11,7 @@ import (
 
 	version "github.com/hashicorp/go-version"
 
-	"github.com/outscale-mgo/terraform-plugin-sdk/internal/addrs"
+	"github.com/hashicorp/terraform-plugin-sdk/internal/addrs"
 )
 
 // Record represents some metadata about an installed module, as part

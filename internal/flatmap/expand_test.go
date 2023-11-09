@@ -4,7 +4,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/outscale-mgo/terraform-plugin-sdk/internal/configs/hcl2shim"
+	"github.com/hashicorp/terraform-plugin-sdk/internal/configs/hcl2shim"
 )
 
 func TestExpand(t *testing.T) {

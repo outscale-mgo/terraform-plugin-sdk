@@ -3,13 +3,13 @@ package terraform
 import (
 	"fmt"
 
-	"github.com/outscale-mgo/terraform-plugin-sdk/internal/plans"
+	"github.com/hashicorp/terraform-plugin-sdk/internal/plans"
 
 	"github.com/hashicorp/hcl/v2"
 
-	"github.com/outscale-mgo/terraform-plugin-sdk/internal/addrs"
-	"github.com/outscale-mgo/terraform-plugin-sdk/internal/configs"
-	"github.com/outscale-mgo/terraform-plugin-sdk/internal/tfdiags"
+	"github.com/hashicorp/terraform-plugin-sdk/internal/addrs"
+	"github.com/hashicorp/terraform-plugin-sdk/internal/configs"
+	"github.com/hashicorp/terraform-plugin-sdk/internal/tfdiags"
 )
 
 // EvalPreventDestroy is an EvalNode implementation that returns an

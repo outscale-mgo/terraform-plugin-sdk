@@ -4,12 +4,12 @@ import (
 	"fmt"
 	"testing"
 
+	"github.com/hashicorp/terraform-plugin-sdk/internal/addrs"
+	"github.com/hashicorp/terraform-plugin-sdk/internal/configs/configschema"
+	"github.com/hashicorp/terraform-plugin-sdk/internal/providers"
+	"github.com/hashicorp/terraform-plugin-sdk/internal/states"
+	"github.com/hashicorp/terraform-plugin-sdk/terraform"
 	"github.com/mitchellh/colorstring"
-	"github.com/outscale-mgo/terraform-plugin-sdk/internal/addrs"
-	"github.com/outscale-mgo/terraform-plugin-sdk/internal/configs/configschema"
-	"github.com/outscale-mgo/terraform-plugin-sdk/internal/providers"
-	"github.com/outscale-mgo/terraform-plugin-sdk/internal/states"
-	"github.com/outscale-mgo/terraform-plugin-sdk/terraform"
 	"github.com/zclconf/go-cty/cty"
 )
 

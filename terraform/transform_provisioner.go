@@ -4,10 +4,10 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/outscale-mgo/terraform-plugin-sdk/internal/addrs"
+	"github.com/hashicorp/terraform-plugin-sdk/internal/addrs"
 
 	"github.com/hashicorp/go-multierror"
-	"github.com/outscale-mgo/terraform-plugin-sdk/internal/dag"
+	"github.com/hashicorp/terraform-plugin-sdk/internal/dag"
 )
 
 // GraphNodeProvisioner is an interface that nodes that can be a provisioner

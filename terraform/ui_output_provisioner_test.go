@@ -3,7 +3,7 @@ package terraform
 import (
 	"testing"
 
-	"github.com/outscale-mgo/terraform-plugin-sdk/internal/addrs"
+	"github.com/hashicorp/terraform-plugin-sdk/internal/addrs"
 )
 
 func TestProvisionerUIOutput_impl(t *testing.T) {

@@ -3,7 +3,7 @@ package addrs
 import (
 	"fmt"
 
-	"github.com/outscale-mgo/terraform-plugin-sdk/internal/tfdiags"
+	"github.com/hashicorp/terraform-plugin-sdk/internal/tfdiags"
 
 	"github.com/hashicorp/hcl/v2"
 	"github.com/hashicorp/hcl/v2/hclsyntax"
@@ -23,8 +23,8 @@ type ProviderConfig struct {
 // that can be successfully parsed as compact relative provider configuration
 // addresses:
 //
-//	aws
-//	aws.foo
+//     aws
+//     aws.foo
 //
 // This function will panic if given a relative traversal.
 //
@@ -138,11 +138,11 @@ type AbsProviderConfig struct {
 // address. The following are examples of traversals that can be successfully
 // parsed as absolute provider configuration addresses:
 //
-//	provider.aws
-//	provider.aws.foo
-//	module.bar.provider.aws
-//	module.bar.module.baz.provider.aws.foo
-//	module.foo[1].provider.aws.foo
+//     provider.aws
+//     provider.aws.foo
+//     module.bar.provider.aws
+//     module.bar.module.baz.provider.aws.foo
+//     module.foo[1].provider.aws.foo
 //
 // This type of address is used, for example, to record the relationships
 // between resources and provider configurations in the state structure.

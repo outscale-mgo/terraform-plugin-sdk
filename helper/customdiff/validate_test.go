@@ -4,7 +4,7 @@ import (
 	"errors"
 	"testing"
 
-	"github.com/outscale-mgo/terraform-plugin-sdk/helper/schema"
+	"github.com/hashicorp/terraform-plugin-sdk/helper/schema"
 )
 
 func TestValidateChange(t *testing.T) {

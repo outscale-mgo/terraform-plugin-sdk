@@ -9,14 +9,14 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/outscale-mgo/terraform-plugin-sdk/internal/addrs"
-	"github.com/outscale-mgo/terraform-plugin-sdk/internal/configs/hcl2shim"
-	"github.com/outscale-mgo/terraform-plugin-sdk/internal/states"
+	"github.com/hashicorp/terraform-plugin-sdk/internal/addrs"
+	"github.com/hashicorp/terraform-plugin-sdk/internal/configs/hcl2shim"
+	"github.com/hashicorp/terraform-plugin-sdk/internal/states"
 
 	"github.com/hashicorp/errwrap"
-	"github.com/outscale-mgo/terraform-plugin-sdk/internal/plans"
-	"github.com/outscale-mgo/terraform-plugin-sdk/internal/tfdiags"
-	"github.com/outscale-mgo/terraform-plugin-sdk/terraform"
+	"github.com/hashicorp/terraform-plugin-sdk/internal/plans"
+	"github.com/hashicorp/terraform-plugin-sdk/internal/tfdiags"
+	"github.com/hashicorp/terraform-plugin-sdk/terraform"
 )
 
 // testStepConfig runs a config-mode test step

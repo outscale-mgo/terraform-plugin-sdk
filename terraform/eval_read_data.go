@@ -6,13 +6,13 @@ import (
 
 	"github.com/zclconf/go-cty/cty"
 
-	"github.com/outscale-mgo/terraform-plugin-sdk/internal/addrs"
-	"github.com/outscale-mgo/terraform-plugin-sdk/internal/configs"
-	"github.com/outscale-mgo/terraform-plugin-sdk/internal/plans"
-	"github.com/outscale-mgo/terraform-plugin-sdk/internal/plans/objchange"
-	"github.com/outscale-mgo/terraform-plugin-sdk/internal/providers"
-	"github.com/outscale-mgo/terraform-plugin-sdk/internal/states"
-	"github.com/outscale-mgo/terraform-plugin-sdk/internal/tfdiags"
+	"github.com/hashicorp/terraform-plugin-sdk/internal/addrs"
+	"github.com/hashicorp/terraform-plugin-sdk/internal/configs"
+	"github.com/hashicorp/terraform-plugin-sdk/internal/plans"
+	"github.com/hashicorp/terraform-plugin-sdk/internal/plans/objchange"
+	"github.com/hashicorp/terraform-plugin-sdk/internal/providers"
+	"github.com/hashicorp/terraform-plugin-sdk/internal/states"
+	"github.com/hashicorp/terraform-plugin-sdk/internal/tfdiags"
 )
 
 // EvalReadData is an EvalNode implementation that deals with the main part

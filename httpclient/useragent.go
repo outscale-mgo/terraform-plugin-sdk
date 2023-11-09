@@ -6,7 +6,7 @@ import (
 	"os"
 	"strings"
 
-	"github.com/outscale-mgo/terraform-plugin-sdk/meta"
+	"github.com/hashicorp/terraform-plugin-sdk/meta"
 )
 
 const uaEnvVar = "TF_APPEND_USER_AGENT"

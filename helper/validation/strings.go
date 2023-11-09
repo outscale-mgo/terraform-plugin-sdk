@@ -6,8 +6,8 @@ import (
 	"regexp"
 	"strings"
 
-	"github.com/outscale-mgo/terraform-plugin-sdk/helper/schema"
-	"github.com/outscale-mgo/terraform-plugin-sdk/helper/structure"
+	"github.com/hashicorp/terraform-plugin-sdk/helper/schema"
+	"github.com/hashicorp/terraform-plugin-sdk/helper/structure"
 )
 
 // StringIsNotEmpty is a ValidateFunc that ensures a string is not empty

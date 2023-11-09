@@ -1,8 +1,8 @@
 package terraform
 
 import (
-	"github.com/outscale-mgo/terraform-plugin-sdk/internal/configs/configschema"
-	"github.com/outscale-mgo/terraform-plugin-sdk/internal/provisioners"
+	"github.com/hashicorp/terraform-plugin-sdk/internal/configs/configschema"
+	"github.com/hashicorp/terraform-plugin-sdk/internal/provisioners"
 )
 
 // ResourceProvisioner is an interface that must be implemented by any

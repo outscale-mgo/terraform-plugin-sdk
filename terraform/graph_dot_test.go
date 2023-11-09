@@ -4,7 +4,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/outscale-mgo/terraform-plugin-sdk/internal/dag"
+	"github.com/hashicorp/terraform-plugin-sdk/internal/dag"
 )
 
 func TestGraphDot(t *testing.T) {

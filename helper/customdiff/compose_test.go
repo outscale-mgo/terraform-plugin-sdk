@@ -5,7 +5,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/outscale-mgo/terraform-plugin-sdk/helper/schema"
+	"github.com/hashicorp/terraform-plugin-sdk/helper/schema"
 )
 
 func TestAll(t *testing.T) {

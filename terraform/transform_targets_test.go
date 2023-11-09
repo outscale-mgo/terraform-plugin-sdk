@@ -4,7 +4,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/outscale-mgo/terraform-plugin-sdk/internal/addrs"
+	"github.com/hashicorp/terraform-plugin-sdk/internal/addrs"
 )
 
 func TestTargetsTransformer(t *testing.T) {

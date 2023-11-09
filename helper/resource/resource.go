@@ -1,8 +1,8 @@
 package resource
 
 import (
-	"github.com/outscale-mgo/terraform-plugin-sdk/internal/helper/config"
-	"github.com/outscale-mgo/terraform-plugin-sdk/terraform"
+	"github.com/hashicorp/terraform-plugin-sdk/internal/helper/config"
+	"github.com/hashicorp/terraform-plugin-sdk/terraform"
 )
 
 type Resource struct {

@@ -2,7 +2,7 @@ package customdiff
 
 import (
 	"github.com/hashicorp/go-multierror"
-	"github.com/outscale-mgo/terraform-plugin-sdk/helper/schema"
+	"github.com/hashicorp/terraform-plugin-sdk/helper/schema"
 )
 
 // All returns a CustomizeDiffFunc that runs all of the given
@@ -15,31 +15,32 @@ import (
 //
 // For example:
 //
-//	&schema.Resource{
-//	    // ...
-//	    CustomizeDiff: customdiff.All(
-//	        customdiff.ValidateChange("size", func (old, new, meta interface{}) error {
-//	            // If we are increasing "size" then the new value must be
-//	            // a multiple of the old value.
-//	            if new.(int) <= old.(int) {
-//	                return nil
-//	            }
-//	            if (new.(int) % old.(int)) != 0 {
-//	                return fmt.Errorf("new size value must be an integer multiple of old value %d", old.(int))
-//	            }
-//	            return nil
-//	        }),
-//	        customdiff.ForceNewIfChange("size", func (old, new, meta interface{}) bool {
-//	            // "size" can only increase in-place, so we must create a new resource
-//	            // if it is decreased.
-//	            return new.(int) < old.(int)
-//	        }),
-//	        customdiff.ComputedIf("version_id", func (d *schema.ResourceDiff, meta interface{}) bool {
-//	            // Any change to "content" causes a new "version_id" to be allocated.
-//	            return d.HasChange("content")
-//	        }),
-//	    ),
-//	}
+//     &schema.Resource{
+//         // ...
+//         CustomizeDiff: customdiff.All(
+//             customdiff.ValidateChange("size", func (old, new, meta interface{}) error {
+//                 // If we are increasing "size" then the new value must be
+//                 // a multiple of the old value.
+//                 if new.(int) <= old.(int) {
+//                     return nil
+//                 }
+//                 if (new.(int) % old.(int)) != 0 {
+//                     return fmt.Errorf("new size value must be an integer multiple of old value %d", old.(int))
+//                 }
+//                 return nil
+//             }),
+//             customdiff.ForceNewIfChange("size", func (old, new, meta interface{}) bool {
+//                 // "size" can only increase in-place, so we must create a new resource
+//                 // if it is decreased.
+//                 return new.(int) < old.(int)
+//             }),
+//             customdiff.ComputedIf("version_id", func (d *schema.ResourceDiff, meta interface{}) bool {
+//                 // Any change to "content" causes a new "version_id" to be allocated.
+//                 return d.HasChange("content")
+//             }),
+//         ),
+//     }
+//
 func All(funcs ...schema.CustomizeDiffFunc) schema.CustomizeDiffFunc {
 	return func(d *schema.ResourceDiff, meta interface{}) error {
 		var err error

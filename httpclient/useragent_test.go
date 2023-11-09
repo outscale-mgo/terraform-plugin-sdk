@@ -5,7 +5,7 @@ import (
 	"os"
 	"testing"
 
-	"github.com/outscale-mgo/terraform-plugin-sdk/meta"
+	"github.com/hashicorp/terraform-plugin-sdk/meta"
 )
 
 func TestUserAgentAppendViaEnvVar(t *testing.T) {

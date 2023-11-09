@@ -8,7 +8,7 @@ import (
 	"strings"
 
 	cleanhttp "github.com/hashicorp/go-cleanhttp"
-	"github.com/outscale-mgo/terraform-plugin-sdk/internal/version"
+	"github.com/hashicorp/terraform-plugin-sdk/internal/version"
 )
 
 const uaEnvVar = "TF_APPEND_USER_AGENT"

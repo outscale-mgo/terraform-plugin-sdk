@@ -4,8 +4,8 @@ import (
 	"log"
 	"os"
 
+	"github.com/hashicorp/terraform-plugin-sdk/plugin"
 	tftest "github.com/hashicorp/terraform-plugin-test/v2"
-	"github.com/outscale-mgo/terraform-plugin-sdk/plugin"
 )
 
 var TestHelper *tftest.Helper

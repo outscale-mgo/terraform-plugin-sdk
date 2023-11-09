@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/outscale-mgo/terraform-plugin-sdk/terraform"
+	"github.com/hashicorp/terraform-plugin-sdk/terraform"
 )
 
 func TestTest_importState(t *testing.T) {

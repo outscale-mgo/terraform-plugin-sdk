@@ -3,8 +3,8 @@ package terraform
 import (
 	"log"
 
-	"github.com/outscale-mgo/terraform-plugin-sdk/internal/addrs"
-	"github.com/outscale-mgo/terraform-plugin-sdk/internal/dag"
+	"github.com/hashicorp/terraform-plugin-sdk/internal/addrs"
+	"github.com/hashicorp/terraform-plugin-sdk/internal/dag"
 )
 
 // GraphNodeTargetable is an interface for graph nodes to implement when they

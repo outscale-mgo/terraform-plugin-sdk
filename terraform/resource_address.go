@@ -7,8 +7,8 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/outscale-mgo/terraform-plugin-sdk/internal/addrs"
-	"github.com/outscale-mgo/terraform-plugin-sdk/internal/configs"
+	"github.com/hashicorp/terraform-plugin-sdk/internal/addrs"
+	"github.com/hashicorp/terraform-plugin-sdk/internal/configs"
 )
 
 // ResourceAddress is a way of identifying an individual resource (or,
@@ -92,9 +92,7 @@ func (r *ResourceAddress) String() string {
 
 // HasResourceSpec returns true if the address has a resource spec, as
 // defined in the documentation:
-//
-//	https://www.terraform.io/docs/internals/resource-addressing.html
-//
+//    https://www.terraform.io/docs/internals/resource-addressing.html
 // In particular, this returns false if the address contains only
 // a module path, thus addressing the entire module.
 func (r *ResourceAddress) HasResourceSpec() bool {

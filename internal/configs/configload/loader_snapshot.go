@@ -10,8 +10,8 @@ import (
 
 	version "github.com/hashicorp/go-version"
 	"github.com/hashicorp/hcl/v2"
-	"github.com/outscale-mgo/terraform-plugin-sdk/internal/configs"
-	"github.com/outscale-mgo/terraform-plugin-sdk/internal/modsdir"
+	"github.com/hashicorp/terraform-plugin-sdk/internal/configs"
+	"github.com/hashicorp/terraform-plugin-sdk/internal/modsdir"
 	"github.com/spf13/afero"
 )
 
@@ -181,6 +181,7 @@ func (l *Loader) addModuleToSnapshot(snap *Snapshot, key string, dir string, sou
 type snapshotFS struct {
 	snap *Snapshot
 }
+
 
 func (fs snapshotFS) Create(name string) (afero.File, error) {
 	return nil, fmt.Errorf("cannot create file inside configuration snapshot")

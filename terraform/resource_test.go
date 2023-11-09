@@ -6,11 +6,11 @@ import (
 	"strconv"
 	"testing"
 
-	"github.com/outscale-mgo/terraform-plugin-sdk/internal/configs/configschema"
+	"github.com/hashicorp/terraform-plugin-sdk/internal/configs/configschema"
 	"github.com/zclconf/go-cty/cty"
 
+	"github.com/hashicorp/terraform-plugin-sdk/internal/configs/hcl2shim"
 	"github.com/mitchellh/reflectwalk"
-	"github.com/outscale-mgo/terraform-plugin-sdk/internal/configs/hcl2shim"
 )
 
 func TestInstanceInfoResourceAddress(t *testing.T) {
