@@ -10,9 +10,9 @@ import (
 	"github.com/hashicorp/hcl/v2"
 	"github.com/hashicorp/hcl/v2/hcled"
 	"github.com/hashicorp/hcl/v2/hclparse"
-	"github.com/hashicorp/terraform-plugin-sdk/internal/tfdiags"
 	"github.com/mitchellh/colorstring"
 	wordwrap "github.com/mitchellh/go-wordwrap"
+	"github.com/outscale-mgo/terraform-plugin-sdk/internal/tfdiags"
 	"github.com/zclconf/go-cty/cty"
 )
 

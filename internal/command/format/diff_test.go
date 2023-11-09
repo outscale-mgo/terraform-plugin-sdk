@@ -3,10 +3,10 @@ package format
 import (
 	"testing"
 
-	"github.com/hashicorp/terraform-plugin-sdk/internal/addrs"
-	"github.com/hashicorp/terraform-plugin-sdk/internal/configs/configschema"
-	"github.com/hashicorp/terraform-plugin-sdk/internal/plans"
 	"github.com/mitchellh/colorstring"
+	"github.com/outscale-mgo/terraform-plugin-sdk/internal/addrs"
+	"github.com/outscale-mgo/terraform-plugin-sdk/internal/configs/configschema"
+	"github.com/outscale-mgo/terraform-plugin-sdk/internal/plans"
 	"github.com/zclconf/go-cty/cty"
 )
 

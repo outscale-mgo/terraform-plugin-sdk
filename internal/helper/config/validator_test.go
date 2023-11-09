@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/hashicorp/terraform-plugin-sdk/terraform"
+	"github.com/outscale-mgo/terraform-plugin-sdk/terraform"
 )
 
 func TestValidator(t *testing.T) {

@@ -7,7 +7,7 @@ import (
 	"github.com/hashicorp/hcl/v2/gohcl"
 	"github.com/hashicorp/hcl/v2/hclsyntax"
 
-	"github.com/hashicorp/terraform-plugin-sdk/internal/addrs"
+	"github.com/outscale-mgo/terraform-plugin-sdk/internal/addrs"
 )
 
 // Resource represents a "resource" or "data" block in a module or file.

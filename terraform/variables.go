@@ -7,8 +7,8 @@ import (
 	"github.com/zclconf/go-cty/cty"
 	"github.com/zclconf/go-cty/cty/convert"
 
-	"github.com/hashicorp/terraform-plugin-sdk/internal/configs"
-	"github.com/hashicorp/terraform-plugin-sdk/internal/tfdiags"
+	"github.com/outscale-mgo/terraform-plugin-sdk/internal/configs"
+	"github.com/outscale-mgo/terraform-plugin-sdk/internal/tfdiags"
 )
 
 // InputValue represents a value for a variable in the root module, provided

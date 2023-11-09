@@ -5,8 +5,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/hashicorp/terraform-plugin-sdk/internal/addrs"
-	"github.com/hashicorp/terraform-plugin-sdk/internal/plans"
+	"github.com/outscale-mgo/terraform-plugin-sdk/internal/addrs"
+	"github.com/outscale-mgo/terraform-plugin-sdk/internal/plans"
 )
 
 func cbdTestGraph(t *testing.T, mod string, changes *plans.Changes) *Graph {

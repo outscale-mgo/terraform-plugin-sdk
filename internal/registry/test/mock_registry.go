@@ -10,13 +10,13 @@ import (
 	"regexp"
 	"strings"
 
-	"github.com/hashicorp/terraform-plugin-sdk/httpclient"
-	"github.com/hashicorp/terraform-plugin-sdk/internal/registry/regsrc"
-	"github.com/hashicorp/terraform-plugin-sdk/internal/registry/response"
-	tfversion "github.com/hashicorp/terraform-plugin-sdk/internal/version"
 	"github.com/hashicorp/terraform-svchost"
 	"github.com/hashicorp/terraform-svchost/auth"
 	"github.com/hashicorp/terraform-svchost/disco"
+	"github.com/outscale-mgo/terraform-plugin-sdk/httpclient"
+	"github.com/outscale-mgo/terraform-plugin-sdk/internal/registry/regsrc"
+	"github.com/outscale-mgo/terraform-plugin-sdk/internal/registry/response"
+	tfversion "github.com/outscale-mgo/terraform-plugin-sdk/internal/version"
 )
 
 // Disco return a *disco.Disco mapping registry.terraform.io, localhost,

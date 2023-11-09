@@ -3,7 +3,7 @@ package plugin
 import (
 	"net/rpc"
 
-	"github.com/hashicorp/terraform-plugin-sdk/terraform"
+	"github.com/outscale-mgo/terraform-plugin-sdk/terraform"
 )
 
 // UIOutput is an implementatin of terraform.UIOutput that communicates

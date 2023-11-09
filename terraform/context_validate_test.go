@@ -8,12 +8,12 @@ import (
 
 	"github.com/zclconf/go-cty/cty"
 
-	"github.com/hashicorp/terraform-plugin-sdk/internal/addrs"
-	"github.com/hashicorp/terraform-plugin-sdk/internal/configs/configschema"
-	"github.com/hashicorp/terraform-plugin-sdk/internal/providers"
-	"github.com/hashicorp/terraform-plugin-sdk/internal/provisioners"
-	"github.com/hashicorp/terraform-plugin-sdk/internal/states"
-	"github.com/hashicorp/terraform-plugin-sdk/internal/tfdiags"
+	"github.com/outscale-mgo/terraform-plugin-sdk/internal/addrs"
+	"github.com/outscale-mgo/terraform-plugin-sdk/internal/configs/configschema"
+	"github.com/outscale-mgo/terraform-plugin-sdk/internal/providers"
+	"github.com/outscale-mgo/terraform-plugin-sdk/internal/provisioners"
+	"github.com/outscale-mgo/terraform-plugin-sdk/internal/states"
+	"github.com/outscale-mgo/terraform-plugin-sdk/internal/tfdiags"
 )
 
 func TestContext2Validate_badCount(t *testing.T) {
@@ -1074,7 +1074,7 @@ func TestContext2Validate_varRefUnknown(t *testing.T) {
 }
 
 // Module variables weren't being interpolated during Validate phase.
-// related to https://github.com/hashicorp/terraform-plugin-sdk/issues/5322
+// related to https://github.com/outscale-mgo/terraform-plugin-sdk/issues/5322
 func TestContext2Validate_interpolateVar(t *testing.T) {
 	input := new(MockUIInput)
 

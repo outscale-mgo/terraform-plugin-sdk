@@ -15,13 +15,13 @@ import (
 	"github.com/google/go-cmp/cmp"
 	"github.com/zclconf/go-cty/cty"
 
-	"github.com/hashicorp/terraform-plugin-sdk/internal/addrs"
-	"github.com/hashicorp/terraform-plugin-sdk/internal/configs/configschema"
-	"github.com/hashicorp/terraform-plugin-sdk/internal/configs/hcl2shim"
-	"github.com/hashicorp/terraform-plugin-sdk/internal/plans"
-	"github.com/hashicorp/terraform-plugin-sdk/internal/providers"
-	"github.com/hashicorp/terraform-plugin-sdk/internal/states"
-	"github.com/hashicorp/terraform-plugin-sdk/internal/tfdiags"
+	"github.com/outscale-mgo/terraform-plugin-sdk/internal/addrs"
+	"github.com/outscale-mgo/terraform-plugin-sdk/internal/configs/configschema"
+	"github.com/outscale-mgo/terraform-plugin-sdk/internal/configs/hcl2shim"
+	"github.com/outscale-mgo/terraform-plugin-sdk/internal/plans"
+	"github.com/outscale-mgo/terraform-plugin-sdk/internal/providers"
+	"github.com/outscale-mgo/terraform-plugin-sdk/internal/states"
+	"github.com/outscale-mgo/terraform-plugin-sdk/internal/tfdiags"
 )
 
 func TestContext2Plan_basic(t *testing.T) {
@@ -876,7 +876,7 @@ module.child:
 	}
 }
 
-// https://github.com/hashicorp/terraform-plugin-sdk/issues/3114
+// https://github.com/outscale-mgo/terraform-plugin-sdk/issues/3114
 func TestContext2Plan_moduleOrphansWithProvisioner(t *testing.T) {
 	m := testModule(t, "plan-modules-remove-provisioners")
 	p := testProvider("aws")
@@ -3233,7 +3233,7 @@ func TestContext2Plan_countIncreaseFromOneCorrupted(t *testing.T) {
 // A common pattern in TF configs is to have a set of resources with the same
 // count and to use count.index to create correspondences between them:
 //
-//    foo_id = "${foo.bar.*.id[count.index]}"
+//	foo_id = "${foo.bar.*.id[count.index]}"
 //
 // This test is for the situation where some instances already exist and the
 // count is increased. In that case, we should see only the create diffs
@@ -4545,7 +4545,7 @@ func TestContext2Plan_targetedOrphan(t *testing.T) {
 	}
 }
 
-// https://github.com/hashicorp/terraform-plugin-sdk/issues/2538
+// https://github.com/outscale-mgo/terraform-plugin-sdk/issues/2538
 func TestContext2Plan_targetedModuleOrphan(t *testing.T) {
 	m := testModule(t, "plan-targeted-module-orphan")
 	p := testProvider("aws")
@@ -4705,7 +4705,7 @@ func TestContext2Plan_outputContainsTargetedResource(t *testing.T) {
 	}
 }
 
-// https://github.com/hashicorp/terraform-plugin-sdk/issues/4515
+// https://github.com/outscale-mgo/terraform-plugin-sdk/issues/4515
 func TestContext2Plan_targetedOverTen(t *testing.T) {
 	m := testModule(t, "plan-targeted-over-ten")
 	p := testProvider("aws")

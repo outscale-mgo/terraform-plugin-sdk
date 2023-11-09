@@ -11,14 +11,14 @@ import (
 
 	"github.com/hashicorp/go-hclog"
 	"github.com/hashicorp/terraform-exec/tfexec"
-	"github.com/hashicorp/terraform-plugin-sdk/acctest"
-	"github.com/hashicorp/terraform-plugin-sdk/helper/logging"
-	grpcplugin "github.com/hashicorp/terraform-plugin-sdk/internal/helper/plugin"
-	proto "github.com/hashicorp/terraform-plugin-sdk/internal/tfplugin5"
-	"github.com/hashicorp/terraform-plugin-sdk/plugin"
-	"github.com/hashicorp/terraform-plugin-sdk/terraform"
 	tftest "github.com/hashicorp/terraform-plugin-test/v2"
 	testing "github.com/mitchellh/go-testing-interface"
+	"github.com/outscale-mgo/terraform-plugin-sdk/acctest"
+	"github.com/outscale-mgo/terraform-plugin-sdk/helper/logging"
+	grpcplugin "github.com/outscale-mgo/terraform-plugin-sdk/internal/helper/plugin"
+	proto "github.com/outscale-mgo/terraform-plugin-sdk/internal/tfplugin5"
+	"github.com/outscale-mgo/terraform-plugin-sdk/plugin"
+	"github.com/outscale-mgo/terraform-plugin-sdk/terraform"
 )
 
 func runProviderCommand(t testing.T, f func() error, wd *tftest.WorkingDir, factories map[string]terraform.ResourceProviderFactory) error {

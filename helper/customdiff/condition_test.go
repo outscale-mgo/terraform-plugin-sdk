@@ -4,7 +4,7 @@ import (
 	"errors"
 	"testing"
 
-	"github.com/hashicorp/terraform-plugin-sdk/helper/schema"
+	"github.com/outscale-mgo/terraform-plugin-sdk/helper/schema"
 )
 
 func TestIf(t *testing.T) {

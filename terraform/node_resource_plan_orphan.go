@@ -1,9 +1,9 @@
 package terraform
 
 import (
-	"github.com/hashicorp/terraform-plugin-sdk/internal/plans"
-	"github.com/hashicorp/terraform-plugin-sdk/internal/providers"
-	"github.com/hashicorp/terraform-plugin-sdk/internal/states"
+	"github.com/outscale-mgo/terraform-plugin-sdk/internal/plans"
+	"github.com/outscale-mgo/terraform-plugin-sdk/internal/providers"
+	"github.com/outscale-mgo/terraform-plugin-sdk/internal/states"
 )
 
 // NodePlannableResourceInstanceOrphan represents a resource that is "applyable":

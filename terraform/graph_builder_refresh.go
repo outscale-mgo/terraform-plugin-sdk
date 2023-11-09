@@ -3,12 +3,12 @@ package terraform
 import (
 	"log"
 
-	"github.com/hashicorp/terraform-plugin-sdk/internal/states"
-	"github.com/hashicorp/terraform-plugin-sdk/internal/tfdiags"
+	"github.com/outscale-mgo/terraform-plugin-sdk/internal/states"
+	"github.com/outscale-mgo/terraform-plugin-sdk/internal/tfdiags"
 
-	"github.com/hashicorp/terraform-plugin-sdk/internal/addrs"
-	"github.com/hashicorp/terraform-plugin-sdk/internal/configs"
-	"github.com/hashicorp/terraform-plugin-sdk/internal/dag"
+	"github.com/outscale-mgo/terraform-plugin-sdk/internal/addrs"
+	"github.com/outscale-mgo/terraform-plugin-sdk/internal/configs"
+	"github.com/outscale-mgo/terraform-plugin-sdk/internal/dag"
 )
 
 // RefreshGraphBuilder implements GraphBuilder and is responsible for building
@@ -16,13 +16,12 @@ import (
 //
 // The primary difference between this graph and others:
 //
-//   * Based on the state since it represents the only resources that
+//   - Based on the state since it represents the only resources that
 //     need to be refreshed.
 //
-//   * Ignores lifecycle options since no lifecycle events occur here. This
+//   - Ignores lifecycle options since no lifecycle events occur here. This
 //     simplifies the graph significantly since complex transforms such as
 //     create-before-destroy can be completely ignored.
-//
 type RefreshGraphBuilder struct {
 	// Config is the configuration tree.
 	Config *configs.Config

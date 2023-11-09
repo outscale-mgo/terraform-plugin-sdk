@@ -8,7 +8,7 @@ import (
 	"os"
 	"testing"
 
-	"github.com/hashicorp/terraform-plugin-sdk/internal/version"
+	"github.com/outscale-mgo/terraform-plugin-sdk/internal/version"
 )
 
 func TestUserAgentString_env(t *testing.T) {

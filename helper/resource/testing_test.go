@@ -14,9 +14,9 @@ import (
 	"testing"
 
 	"github.com/hashicorp/go-multierror"
-	"github.com/hashicorp/terraform-plugin-sdk/helper/schema"
-	"github.com/hashicorp/terraform-plugin-sdk/internal/plugin/discovery"
-	"github.com/hashicorp/terraform-plugin-sdk/terraform"
+	"github.com/outscale-mgo/terraform-plugin-sdk/helper/schema"
+	"github.com/outscale-mgo/terraform-plugin-sdk/internal/plugin/discovery"
+	"github.com/outscale-mgo/terraform-plugin-sdk/terraform"
 )
 
 func init() {

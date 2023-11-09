@@ -1,7 +1,7 @@
 package terraform
 
 import (
-	"github.com/hashicorp/terraform-plugin-sdk/internal/dag"
+	"github.com/outscale-mgo/terraform-plugin-sdk/internal/dag"
 )
 
 // ValidateGraphBuilder creates the graph for the validate operation.

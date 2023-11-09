@@ -1,7 +1,7 @@
 package moduledeps
 
 import (
-	"github.com/hashicorp/terraform-plugin-sdk/internal/plugin/discovery"
+	"github.com/outscale-mgo/terraform-plugin-sdk/internal/plugin/discovery"
 )
 
 // Providers describes a set of provider dependencies for a given module.

@@ -8,7 +8,7 @@ labels: bug
 <!---
 Inspect your go.mod as below to find the version, and paste the result between the ``` marks below.
 
-go mod edit -json | jq '.Require[] | select(.Path=="github.com/hashicorp/terraform-plugin-sdk")'
+go mod edit -json | jq '.Require[] | select(.Path=="github.com/outscale-mgo/terraform-plugin-sdk")'
 
 If you are not running the latest version of the SDK, please try upgrading
 because your bug may have already been fixed.

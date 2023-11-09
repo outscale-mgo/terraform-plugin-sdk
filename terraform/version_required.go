@@ -4,11 +4,11 @@ import (
 	"fmt"
 
 	"github.com/hashicorp/hcl/v2"
-	"github.com/hashicorp/terraform-plugin-sdk/internal/tfdiags"
+	"github.com/outscale-mgo/terraform-plugin-sdk/internal/tfdiags"
 
-	"github.com/hashicorp/terraform-plugin-sdk/internal/configs"
+	"github.com/outscale-mgo/terraform-plugin-sdk/internal/configs"
 
-	tfversion "github.com/hashicorp/terraform-plugin-sdk/internal/version"
+	tfversion "github.com/outscale-mgo/terraform-plugin-sdk/internal/version"
 )
 
 // CheckCoreVersionRequirements visits each of the modules in the given

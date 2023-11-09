@@ -3,11 +3,11 @@ package terraform
 import (
 	"log"
 
-	"github.com/hashicorp/terraform-plugin-sdk/internal/addrs"
-	"github.com/hashicorp/terraform-plugin-sdk/internal/states"
+	"github.com/outscale-mgo/terraform-plugin-sdk/internal/addrs"
+	"github.com/outscale-mgo/terraform-plugin-sdk/internal/states"
 
-	"github.com/hashicorp/terraform-plugin-sdk/internal/configs"
-	"github.com/hashicorp/terraform-plugin-sdk/internal/dag"
+	"github.com/outscale-mgo/terraform-plugin-sdk/internal/configs"
+	"github.com/outscale-mgo/terraform-plugin-sdk/internal/dag"
 )
 
 // GraphNodeDestroyer must be implemented by nodes that destroy resources.
@@ -33,7 +33,7 @@ type GraphNodeCreator interface {
 //
 // That is complicated. Visually:
 //
-//   B_d -> A_d -> A -> B
+//	B_d -> A_d -> A -> B
 //
 // Notice that A destroy depends on B destroy, while B create depends on
 // A create. They're inverted. This must be done for example because often

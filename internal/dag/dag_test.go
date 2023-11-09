@@ -12,9 +12,9 @@ import (
 	"sync"
 	"testing"
 
-	"github.com/hashicorp/terraform-plugin-sdk/internal/tfdiags"
+	"github.com/outscale-mgo/terraform-plugin-sdk/internal/tfdiags"
 
-	"github.com/hashicorp/terraform-plugin-sdk/helper/logging"
+	"github.com/outscale-mgo/terraform-plugin-sdk/helper/logging"
 )
 
 func TestMain(m *testing.M) {

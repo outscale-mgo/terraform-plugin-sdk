@@ -1,4 +1,4 @@
-module github.com/hashicorp/terraform-plugin-sdk
+module github.com/outscale-mgo/terraform-plugin-sdk
 
 go 1.12
 
